@@ -1,4 +1,11 @@
-// 
+// "Incidencia.kt" 
+    /**
+     * Programa escrito en el lenguaje de programación Kotlin que simula un sistema de gestión de incidencias utilizando el patrón productor-consumidor. En este caso, los productores representan a los clientes que generan incidencias, mientras que los consumidores representan a los servidores que procesan y resuelven esas incidencias.
+     * A continuación, se explican las partes principales del código:
+     *    1. Crear productores (clientes) que generan incidencias de manera concurrente.
+     *    2. Crear consumidores (servidores) que procesan las incidencias de manera concurrente.
+     *    3. Utilizar una cola bloqueante para gestionar la comunicación entre productores y consumidores de manera segura en un entorno concurrente.
+     */
 
 
 
@@ -122,3 +129,4 @@ fun main(){
     println("\n\n🛑 Sistema finalizado 🛑")
 
 }
+
