@@ -23,7 +23,7 @@ import java.util.concurrent.atomic.AtomicInteger
 data class Incidencia(val id: Int, val descripcion: String) /* "data class" es una clase especial en Kotlin que se utiliza para almacenar datos. Proporciona automáticamente métodos como "toString()", "equals()" y "hashCode()" basados en las propiedades definidas en el constructor. */
 
 /**
- * Define la función/método principal ("main") del programa.
+ * Define la función/método principal ("main()") del programa.
  *    Es el punto de entrada del programa, donde se ejecutará el código para gestionar las incidencias.
  */
 fun main(){
@@ -68,7 +68,7 @@ fun main(){
                 val incidencia = Incidencia(id, "ERROR. fallo detectado por cliente $productorID")
 
                 /**
-                 * Utiliza el método "put".
+                 * Utiliza el método "put()".
                  *    Insertamos (put) en la cola (bloqueante "colaIncidencias" y segura).
                  */
                 colaIncidencias.put(incidencia)
@@ -94,7 +94,7 @@ fun main(){
             while (true) {
                 /**
                  * Declara una variable inmutable "incidencia".
-                 *    Utiliza el método "take".
+                 *    Utiliza el método "take()".
                  *        Este método bloquea el hilo si la cola está vacía, esperando hasta que haya una incidencia disponible para ser procesada. 
                  *            Extrae (take) una incidencia de la cola (espera si no hay). 
                  */
@@ -120,4 +120,5 @@ fun main(){
 
     // Imprime un mensaje por pantalla indicando que el sistema ha finalizado, se ha cerrado.
     println("\n\n🛑 Sistema finalizado 🛑")
+
 }
