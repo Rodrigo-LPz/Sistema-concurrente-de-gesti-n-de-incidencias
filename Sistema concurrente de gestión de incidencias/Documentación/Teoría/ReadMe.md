@@ -2,7 +2,7 @@
 ### Modelo clásico: Productor (cliente) – Consumidor (servidor)
     Productores → Cola segura → Consumidores
 
-<hr><br><br><br><br>
+<hr><br><br><br>
 
 # 🧠 Conceptos teóricos demostrando
 ### Concurrencia
@@ -54,4 +54,3 @@
 | Productores  | Clientes   |
 | Cola         | Canal      |
 | Consumidores | Servidor   |
-
